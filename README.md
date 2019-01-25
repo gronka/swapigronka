@@ -14,3 +14,7 @@ Scripts to run the database:
 - start-mysql.sh: Starts the mysql docker container
 
 
+# Notes
+- pytest on ubuntu 16 was segfaulting for me. Not sure if this is reproducable. pytest works on macos
+- I thought the Click interface would be helpful to structuring this assessment. I quickly realized that the requirement of executing the file directly deprecated that assumption. The cli is deprecated and may not function as intended
+- If the cli works, it should be executable with the command `swa`

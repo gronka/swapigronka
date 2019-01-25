@@ -5,7 +5,7 @@ import requests
 
 
 class FilmTask:
-    BASE_URL = "https://swapi.co/api/"
+    API = "https://swapi.co/api/"
     ADDITIONAL_FIELDS = [
         "characters",
         "planets",
@@ -23,7 +23,7 @@ class FilmTask:
         guess = 1
         querying = True
         while querying:
-            film_req = requests.get(self.BASE_URL + "films/" + str(guess))
+            film_req = requests.get(self.API + "films/" + str(guess))
             film = film_req.json()
             if film["title"] == "A New Hope":
                 querying = False
